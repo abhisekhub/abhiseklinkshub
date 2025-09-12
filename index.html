@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Referral & Promo Links</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f4f8fb;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 650px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* Search Box */
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: #2196f3;
+      box-shadow: 0 0 6px rgba(33, 150, 243, 0.3);
+    }
+
+    /* Referral Cards */
+    .link-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 12px 15px;
+      margin-bottom: 12px;
+      border: 1px solid #e3e3e3;
+      transition: all 0.2s ease;
+    }
+
+    .link-card:hover {
+      background: #eef7ff;
+      border-color: #2196f3;
+    }
+
+    .link-details {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .link-details h3 {
+      font-size: 16px;
+      color: #222;
+      margin-bottom: 4px;
+    }
+
+    .link-details a {
+      font-size: 14px;
+      color: #2196f3;
+      text-decoration: none;
+      word-break: break-all;
+    }
+
+    .copy-btn {
+      background: #2196f3;
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 14px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: #0b7dda;
+    }
+
+    /* Copy Notification */
+    #copy-notice {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #4CAF50;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      display: none;
+      font-size: 14px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .link-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .copy-btn {
+        margin-top: 8px;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Abhisek Referral & Promo Links</h1>
+    </div>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search referral links..." onkeyup="searchLinks()">
+    </div>
+
+    <!-- Exness Referral Links -->
+    <div id="linksList">
+      <!-- Link 1 -->
+      <div class="link-card">
+        <div class="link-details">
+          <h3>Exness Main web link</h3>
+          <a href="https://one.exnessonelink.com/a/9chojoqyg8" target="_blank">https://one.exnessonelink.com/a/9chojoqyg8</a>
+        </div>
+        <button class="copy-btn" onclick="copyText('https://one.exnessonelink.com/a/9chojoqyg8')">Copy</button>
+      </div>
+
+      <!-- Exness Referral Links -->
+    <div id="linksList">
+        <!-- Link 1 -->
+        <div class="link-card">
+          <div class="link-details">
+            <h3>Exness Mobile link</h3>
+            <a href="https://one.exnessonelink.com/a/9chojoqyg8?platform=mobile" target="_blank">https://one.exnessonelink.com/a/9chojoqyg8?platform=mobile</a>
+          </div>
+          <button class="copy-btn" onclick="copyText('https://one.exnessonelink.com/a/9chojoqyg8?platform=mobile')">Copy</button>
+        </div>
+
+
+      <!-- Binance Referral Links -->
+      <div class="link-card">
+        <div class="link-details">
+          <h3>Binance</h3>
+          <a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00EZ6BFW3G" target="_blank">https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00EZ6BFW3G</a>
+        </div>
+        <button class="copy-btn" onclick="copyText('https://www.binance.com/activity/referral-entry/CPA?ref=CPA_00EZ6BFW3G')">Copy</button>
+      </div>
+
+      <!-- Terabap Tools -->
+      <div class="link-card">
+        <div class="link-details">
+          <h3>Terabap Tools</h3>
+          <a href="https://abhisekji04.github.io/Terabap-Tools/" target="_blank">https://abhisekji04.github.io/Terabap-Tools/</a>
+        </div>
+        <button class="copy-btn" onclick="copyText('https://abhisekji04.github.io/Terabap-Tools/')">Copy</button>
+      </div>
+
+      <!-- Abhisek Referral & Promo Links -->
+      <div class="link-card">
+        <div class="link-details">
+          <h3>Abhisek Referral & Promo Links </h3>
+          <a href="https://abhisekji04.github.io/links/" target="_blank">https://abhisekji04.github.io/links/</a>
+        </div>
+        <button class="copy-btn" onclick="copyText('https://abhisekji04.github.io/links/')">Copy</button>
+      </div>
+
+      <!-- Abhisek Portfolio -->
+      <div class="link-card">
+        <div class="link-details">
+          <h3>Abhisek Portfolio </h3>
+          <a href="https://abhisek4.com.np/" target="_blank">https://abhisek4.com.np/</a>
+        </div>
+        <button class="copy-btn" onclick="copyText('https://abhisek4.com.np/')">Copy</button>
+      </div>
+
+      <!-- Abhisek Online Sewa -->
+      <div class="link-card">
+        <div class="link-details">
+          <h3>Abhisek Online Sewa </h3>
+          <a href="https://abhisek4.com.np/store" target="_blank">https://abhisek4.com.np/store</a>
+        </div>
+        <button class="copy-btn" onclick="copyText('https://abhisek4.com.np/store')">Copy</button>
+      </div>
+      
+
+  <!-- Copy Notification -->
+  <div id="copy-notice">Link copied!</div>
+
+  <script>
+    // Copy Function with Notification
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const notice = document.getElementById("copy-notice");
+        notice.style.display = "block";
+        setTimeout(() => {
+          notice.style.display = "none";
+        }, 1500);
+      });
+    }
+
+    // Search Function
+    function searchLinks() {
+      let input = document.getElementById("searchInput").value.toLowerCase();
+      let cards = document.querySelectorAll(".link-card");
+
+      cards.forEach(card => {
+        let title = card.querySelector("h3").innerText.toLowerCase();
+        let link = card.querySelector("a").innerText.toLowerCase();
+        if (title.includes(input) || link.includes(input)) {
+          card.style.display = "flex";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
